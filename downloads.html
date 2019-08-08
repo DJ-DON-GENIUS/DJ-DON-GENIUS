@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<html>
+<title>AVAILABLE DOWNLAODS</title>
+<header>AVAILABLE DOWNLAODS</header>
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+	window.onload=function(){
+	var audioT=document.getElementById("audioD");
+	var audioMix =["hiphop_mix.mp3","NAIJAMIX-36.mp3"];
+
+	for(i=0; i< audioMix.length; i++){
+	var audioE = document.createElement('audio');
+	var audioTitle=document.createElement('span');
+		audioTitle.textContent=audioMix[i];
+		audioE.src=audioMix[i];
+		audioE.controls= true;
+		audioE.autoplay= false;
+		audioT.appendChild(audioE);
+		audioT.appendChild(audioTitle);
+	var lin   =document.createElement('br');
+		audioT.appendChild(lin);
+
+		}
+		}
+</script>
+<body>
+<hr color="red">
+<div id="audioD">
+<div id="title">title</div>
+AUDIO MIX</div>
+<hr color="red">
+<div class="video"> VIDEO MIX</div>
+
+
+
+</body>
+
