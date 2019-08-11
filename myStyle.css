@@ -58,9 +58,10 @@ header{
 	}
 	
 p	{
-	  width: 500px;
-  	height: 300px;
-  	line-height: 300px;
+	font-color: white;
+	  width: 100px;
+  	height: 100px;
+  	line-height: 100px;
   	background-size: cover;
   	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 	}
