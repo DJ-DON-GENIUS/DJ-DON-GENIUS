@@ -4,7 +4,24 @@
   <script>document.write(new Date()+"<h1>welcome to DJ DON GENIUS! ON THE WEB</h1><p>HAPPY DOWNLAODS AND LISTENING!</p>");</script>
 <header>AVAILABLE DOWNLAODS
 <link rel="stylesheet" href="myDStyle.css">
-<script type="text/javascript" src="myJavascript.js"></script>  
+  <script type="text/javascript" src="myJavascript.js"></script>
+  <script type="text/javascript">
+  function myFunction() {
+   //var element = document.getElementsByTagName("div");
+	var element =document.getElementById("myDIV")
+   //element.classList.add("mystyle");
+   var anch=document.getElementsByTagName("a");
+		var ai;
+		
+		for(ai=0; ai<anch.length; ai++){
+		anch[ai].setAttribute("href", "downloads");
+		}
+ 	//document.getElementsByTagName("audio")[1].setAttribute("class", "mystyle");
+}
+  
+  
+  
+  </script>  
 </header>
 <body>
 <hr color="red"><span>AUDIO MIX</span>
