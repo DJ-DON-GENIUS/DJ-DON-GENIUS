@@ -6,7 +6,7 @@
 	for(i=0; i< audioMix.length; i++){
 	var audioE = document.createElement('audio');
 	var audioTitle=document.createElement('a');
-		audioTitle.setAttribute("href", "downloads");
+		audioTitle.setAttribute("href", "posts");
 		audioTitle.textContent=audioMix[i];
 		audioE.src=audioMix[i];
 		audioE.controls= true;
