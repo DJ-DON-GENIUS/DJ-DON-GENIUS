@@ -1,0 +1,15 @@
+
+<script>
+fetch('https://raw.githubusercontent.com/DJ-DON-GENIUS/DJ-DON-GENIUS/master/posts.json', {mode: 'cors'})
+  .then(function(response) {
+    return response.text();
+  })
+  .then(function(text) {
+    alert('Request successful', text);
+	for(i=0; 1<JSON.parse(text).length; i++)
+	document.write('<P><b>id:'+JSON.parse(text)[i].id+'</p>'+'<P>title:'+JSON.parse(text)[i].title+'</p></b>'+'<P>body:'+JSON.parse(text)[i].body+'</p><br/>');
+  })
+  .catch(function(error) {
+    alert('Request failed', error)
+  });
+  </script>
