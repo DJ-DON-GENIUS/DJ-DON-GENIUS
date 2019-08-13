@@ -5,6 +5,7 @@
 
 	for(i=0; i< audioMix.length; i++){
 	var audioE = document.createElement('audio');
+	var lin   =document.createElement('br');
 	var audioTitle=document.createElement('a');
 		audioTitle.setAttribute("href", "downloads");
 		audioTitle.textContent=audioMix[i];
@@ -12,9 +13,10 @@
 		audioE.controls= true;
 		audioE.autoplay= false;
 		audioT.appendChild(audioE);
-		audioT.appendChild(audioTitle);
-	var lin   =document.createElement('br');
 		audioT.appendChild(lin);
+		audioT.appendChild(audioTitle);
+	
+		
 
 		}
 	}
