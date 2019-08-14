@@ -12,8 +12,8 @@
 		audioE[i].src=audioMix[i];
 		audioE[i].controls= true;
 		audioE[i].autoplay= false;
-		audioT.appendChild(audioE);
-		audioT.appendChild(audioTitle);
+		audioT.appendChild(audioE[i]);
+		audioT.appendChild(audioTitle[i]);
 	var lin   =document.createElement('br');
 		audioT.appendChild(lin);
 		
