@@ -6,7 +6,9 @@
 	for(i=0; i< audioMix.length; i++){
 	var audioE = document.createElement('audio');
 	var audioTitle=document.createElement('a');
-		audioTitle.setAttribute("href", "posts");
+		audioTitle.setAttribute("href", "post_page.html");
+		audioTitle.setAttribute("onclick", "post_Page()");
+		audioTitle.setAttribute.text=audioMix[i];
 		audioE.src=audioMix[i];
 		audioE.controls= true;
 		audioE.autoplay= false;
