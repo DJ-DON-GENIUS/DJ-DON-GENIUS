@@ -6,7 +6,7 @@
 	for(i=0; i< audioMix.length; i++){
 	var audioE = document.createElement('audio')[i];
 	var audioTitle=document.createElement('a')[i];
-		audioTitle.setAttribute("href", "post_page");
+		audioTitle.setAttribute("href", "postDownload");
 		audioTitle.setAttribute("onclick", "postPage(event)");
 		audioTitle.text=audioMix[i];
 		audioE.src=audioMix[i];
@@ -20,7 +20,7 @@
 
 		}
 	}
-function postPage(event){
+/*function postPage(event){
 	//var ds=document.getElementById(vs).text;
 
 //alert("i am clicked: "+ds);
@@ -29,4 +29,4 @@ function postPage(event){
 	//alert(event.target);
         event.stopPropagation();
 
-}
+}*/
