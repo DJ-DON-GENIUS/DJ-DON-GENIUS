@@ -6,14 +6,14 @@
 	for(i=0; i< audioMix.length; i++){
 	var audioE = document.createElement('audio');
 	var audioTitle=document.createElement('a');
-		audioTitle[i].setAttribute("href", "post_page");
-		audioTitle[i].setAttribute("onclick", "");
-		audioTitle[i].setAttribute.text=audioMix[i];
-		audioE[i].src=audioMix[i];
-		audioE[i].controls= true;
-		audioE[i].autoplay= false;
-		audioT.appendChild(audioE[i]);
-		audioT.appendChild(audioTitle[i]);
+		audioTitle.setAttribute("href", "post_page");
+		audioTitle.setAttribute("onclick", "post_pages(e)");
+		audioTitle.setAttribute.text=audioMix[i];
+		audioE.src=audioMix[i];
+		audioE.controls= true;
+		audioE.autoplay= false;
+		audioT.appendChild(audioE);
+		audioT.appendChild(audioTitle);
 	var lin   =document.createElement('br');
 		audioT.appendChild(lin);
 		
