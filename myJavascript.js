@@ -4,8 +4,8 @@
 	var audioMix =["hiphop_mix.mp3","NAIJAMIX-36.mp3","testing (32).mp3","testing (36).mp3","CLUB_MIX_NIGERIA-26.mp3"];
 
 	for(i=0; i< audioMix.length; i++){
-	var audioE = document.createElement('audio');
-	var audioTitle=document.createElement('a');
+	var audioE = document.createElement('audio')[i];
+	var audioTitle=document.createElement('a')[i];
 		audioTitle.setAttribute("href", "post_page");
 		audioTitle.setAttribute("onclick", "post_pages(e)");
 		audioTitle.text=audioMix[i];
