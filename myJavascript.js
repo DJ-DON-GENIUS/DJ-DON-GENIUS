@@ -8,7 +8,7 @@
 	var audioTitle=document.createElement('a');
 		audioTitle.setAttribute("href", "post_page");
 		audioTitle.setAttribute("onclick", "post_pages(e)");
-		audioTitle.setAttribute.text=audioMix[i];
+		audioTitle.text=audioMix[i];
 		audioE.src=audioMix[i];
 		audioE.controls= true;
 		audioE.autoplay= false;
