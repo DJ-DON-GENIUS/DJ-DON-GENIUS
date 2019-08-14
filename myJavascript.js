@@ -6,17 +6,17 @@
 	for(i=0; i< audioMix.length; i++){
 	var audioE = document.createElement('audio');
 	var audioTitle=document.createElement('a');
-		audioTitle.setAttribute("href", "posts");
-		audioTitle.textContent=audioMix[i];
-		audioE.src=audioMix[i];
-		audioE.controls= true;
-		audioE.autoplay= false;
+		audioTitle[i].setAttribute("href", "posts");
+		audioTitle[i].setAttribute("onclick", "hellow()");
+		audioTitle[i]..text=x[i].src;
+		audioTitle[i].textContent=audioMix[i];
+		audioE[i].src=audioMix[i];
+		audioE[i].controls= true;
+		audioE[i].autoplay= false;
 		audioT.appendChild(audioE);
 		audioT.appendChild(audioTitle);
 	var lin   =document.createElement('br');
 		audioT.appendChild(lin);
-		
-	
 		
 
 		}
