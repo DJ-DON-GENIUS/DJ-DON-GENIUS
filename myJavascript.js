@@ -7,7 +7,7 @@
 	var audioE = document.createElement('audio')[i];
 	var audioTitle=document.createElement('a')[i];
 		audioTitle.setAttribute("href", "post_page");
-		audioTitle.setAttribute("onclick", "post_pages(e)");
+		audioTitle.setAttribute("onclick", "postPage(event)");
 		audioTitle.text=audioMix[i];
 		audioE.src=audioMix[i];
 		audioE.controls= true;
@@ -20,3 +20,13 @@
 
 		}
 	}
+function postPage(event){
+	//var ds=document.getElementById(vs).text;
+
+//alert("i am clicked: "+ds);
+ //alert(event.target.nodeName);
+ alert("You clicked: "+ this.vs);
+	//alert(event.target);
+        event.stopPropagation();
+
+}
