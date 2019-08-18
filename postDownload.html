@@ -1,7 +1,7 @@
-
+<body id="demo">
 <div id= "title">
 <p><b>MIX TITLE:</P>
-<p><b>COMPOSE by:</P>
+<p><b>COMPOSE BY: DJ DON GENIUS</P>
 </div>
 <div id="post">
 <p><b>COMENT:BY
@@ -11,6 +11,7 @@
 <span></span>
 </P>
 </div>
+</body>
 
 <script>
 
@@ -32,4 +33,25 @@ fetch('https://raw.githubusercontent.com/DJ-DON-GENIUS/DJ-DON-GENIUS/master/post
   });
 
 
-<</script>
+(function myFunction() {
+  var d = new Date();
+  var weekday = new Array(7);
+  weekday[0] = "Sundays are for church service";
+  weekday[1] = "Mondays are for ehhhemmm....ehemm...the thin no gree come out from my mouth.... Hahahahah. Help me talk am. ";
+  weekday[2] = "Tuesday";
+  weekday[3] = "Wednesday";
+  weekday[4] = "Thursday";
+  weekday[5] = "Fridays are for clubbing";
+  weekday[6] = "Saturdays are for Weddings";
+
+  var n = weekday[d.getDay()];
+ /*var days= document.createElement("h1");
+ days.innerText=n;
+ days.setAttribute("id", "days");
+ document.body.appendChild(days);*/
+ 
+ document.getElementById("demo").innerHTML =`<button>${n}</button>`;
+})()
+</script>
+
+</script>
