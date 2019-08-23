@@ -6,7 +6,7 @@
 	for(i=0; i< audioMix.length; i++){
 	var audioE = document.createElement('audio');
 	var audioTitle=document.createElement('a');
-		audioTitle.setAttribute("href", "postDownload");
+		//audioTitle.setAttribute("href", "postDownload");
 		audioTitle.setAttribute("onclick", "postPage(event)");
 		audioTitle.text=audioMix[i];
 		audioE.src=audioMix[i];
@@ -20,13 +20,17 @@
 
 		}
 	}
-/*function postPage(event){
-	//var ds=document.getElementById(vs).text;
 
+function postPage(event){
+	//var ds=document.getElementById(vs).text;
 //alert("i am clicked: "+ds);
  //alert(event.target.nodeName);
- alert("You clicked: "+ this.vs);
+ //alert("You clicked: "+ this.vs);
 	//alert(event.target);
-        event.stopPropagation();
-
-}*/
+	document.body.innerHTML=`<div><h1>HAPPY DOWNLOAD AND LISTENING</h1></br>
+	<p style="color: white; background-Color: green">TITLE :   <b>
+	${event.currentTarget.textContent}<br/> </b>
+	 BY :  <b> DJ DON GENIUS</b></br></p>
+	<audio src="${event.currentTarget.textContent}" controls="true"></audio></div><hr color="yellow"><div style="background-Color: green; color: white"><b>COMENTS: </b></div>`;
+        //event.stopPropagation();
+}
