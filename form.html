@@ -1,6 +1,35 @@
-
-
-<form action="form.php"method="post">
-<textarea name="code">Code goes here</textarea>
-<input type="submit"value="submit">
-</form>
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+<center>
+    <h1>Form</h1>
+          <form name="form1" method="post" action="saveJson.php">
+            <p>
+              <label for="name">Name: </label>
+              <input type="text" name="name" id="name" placeholder="Your full name" autofocus required>
+            </p>
+            <p>
+              <label for="email">Email: </label>
+              <input type="email" name="email" id="email">
+            </p>
+            <p>
+              <label for="cell">Cell: </label>
+              <input type="tel" name="cell" id="cell">
+            </p>
+            <p>
+              <label for="dob">Date of birth: </label>
+              <input type="date" name="dob" id="dob">
+            </p>
+            <p>
+              <label for="study">Years of art study: </label>
+              0 <input type="range" name="study" id="study" min="0" max="16"> 16
+            </p>
+            <p style="text-align: center;">
+              <input type="submit" name="submit" id="submit" value="Submit">
+            </p>
+          </form>
+</center>
+</body>
+</html>
