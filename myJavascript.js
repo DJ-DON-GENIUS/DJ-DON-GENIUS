@@ -27,7 +27,7 @@ function postPage(event){
  //alert(event.target.nodeName);
  //alert("You clicked: "+ this.vs);
 	//alert(event.target);
-	document.body.innerHTML=`<div><h1 style="color:green">HAPPY DOWNLOAD AND LISTENING</h1> <a href="index.html">HOME PAGE</a><a href="downloads.html">BACK TO DOWNLOADE PAGE</a></br>
+	document.body.innerHTML=`<div><h1 style="color:green">HAPPY DOWNLOAD AND LISTENING</h1> <span><a href="index.html">HOME PAGE</a></span><span><a href="downloads.html">BACK TO DOWNLOADE PAGE</a></span></br>
 	<p style="color: white; background-Color: green">TITLE :   <b>
 	${event.currentTarget.textContent}<br/> </b>
 	 BY :  <b> DJ DON GENIUS</b></br></p>
