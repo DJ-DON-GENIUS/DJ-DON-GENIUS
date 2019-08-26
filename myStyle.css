@@ -3,9 +3,9 @@ header{
        font-size:100%;
 }
 
-	.mainB {
+body {
 		background : url('genius.jpg') no-repeat;
-		background-size : 100vw;
+		background-size : 100%;
 		font-family : Arial
 		color : white;
 	}
