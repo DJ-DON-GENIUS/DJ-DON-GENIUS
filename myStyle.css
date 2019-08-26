@@ -3,7 +3,7 @@ header{
        font-size:100%;
 }
 
-	body {
+	.mainB {
 		background : url('genius.jpg') no-repeat;
 		background-size : 100%;
 		font-family : Arial
