@@ -5,9 +5,11 @@
 
 	for(i=0; i< audioMix.length; i++){
 	var audioE = document.createElement('audio');
-	var audioTitle=document.createElement('a');
+	var audioTitle=document.createElement('p');
 		//audioTitle.setAttribute("href", "postDownload");
 		audioTitle.setAttribute("onclick", "postPage(event)");
+		//audioTitle.setAttribute("href", "postDownload");
+		audioTitle.style.color=(i==audioMix.length-1)?"blue":"red";
 		audioTitle.text=audioMix[i];
 		audioE.src=audioMix[i];
 		audioE.controls= true;
