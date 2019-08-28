@@ -9,7 +9,7 @@
 		//audioTitle.setAttribute("href", "postDownload");
 		audioTitle.setAttribute("onclick", "postPage(event)");
 		//audioTitle.setAttribute("href", "postDownload");
-		audioTitle.style.color=(i==audioMix.length-1)?"red":"blue";
+		//audioTitle.style.color=(i==audioMix.length-1)?"red":"blue";
 		audioTitle.textContent=audioMix[i];
 		audioE.src=audioMix[i];
 		audioE.controls= true;
