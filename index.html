@@ -7,14 +7,12 @@
 	  <script>document.write(new Date());</script>
 	<script>
 
-	//Notification.requestPermission();
-	//var no=new Notification("hello man");
-	//console.log(no);
+	Notification.requestPermission();
     	var audioMix =["hiphop_mix.mp3","NAIJAMIX-36.mp3","testing (32).mp3","testing (36).mp3","CLUB_MIX_NIGERIA-26.mp3","CLUB_mix3.mp3","MID_WEEK_CLUBBING.mp3"];
-        //for(i=0; i==audioMix.length-1){
+       
     notify = new Notification('hello dearest, you have one new mix to download', {
 				body : audioMix[audioMix.length-1],
-				icon : 'genius.png',});
+				icon : 'genius.png'});
 		notify.onclick = function(){
 		//location.href = "downloads.html"
 		//alert(this)
