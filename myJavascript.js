@@ -1,6 +1,7 @@
 
 	window.onload=function(){
 	var audioT=document.getElementById("audioD");
+	var sup = document.getElementById("su");
 	var audioMix =["hiphop_mix.mp3","NAIJAMIX-36.mp3","testing (32).mp3","testing (36).mp3","CLUB_MIX_NIGERIA-26.mp3","CLUB_mix3.mp3","MID_WEEK_CLUBBING.mp3","PARTY-TIME-NIAJA.mp3"," COOL-JAMZ (1).mp3","COOL-JAMZ-2.mp3"];
 
 	for(i=0; i< audioMix.length; i++){
@@ -9,10 +10,10 @@
 		//audioTitle.setAttribute("href", "postDownload");
 		audioTitle.setAttribute("onclick", "postPage(event)");
 		//audioTitle.setAttribute("href", "postDownload");
-		audioTitle.style.color=(i==audioMix.length-1)?"navy":"blue";
+		audioTitle.style.color=(i==audioMix.length-1)?"white":"green";
 		audioTitle.textContent=audioMix[i];
 		audioE.src=audioMix[i];
-		audioE.controls= true;
+		audioE.controls= false;
 		audioE.autoplay= false;
 		audioT.appendChild(audioE);
 		audioT.appendChild(audioTitle);
@@ -24,6 +25,7 @@
 		
 
 		}
+	sup.textContent = audioMix.length - 1
 	}
 
 function postPage(event){
@@ -36,6 +38,6 @@ function postPage(event){
 	<p style="color: white; background-Color: green">TITLE :   <b>
 	${event.currentTarget.textContent}<br/> </b>
 	 BY :  <b> DJ DON GENIUS</b></br></p>
-	<audio src="${event.currentTarget.textContent}" controls="true"></audio></div><hr color="yellow"><div style="background-Color: green; color: white"><b>COMENTS: </b></div>`;
+	<audio src="${event.currentTarget.textContent}" controls="true"></audio></div><hr color="yellow"><div style="background-Color: green; color: white"><b>COMMENTS: </b></div>`;
         //event.stopPropagation();
 }
