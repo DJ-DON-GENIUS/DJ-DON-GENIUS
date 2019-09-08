@@ -13,7 +13,7 @@
 		audioTitle.style.color=(i==audioMix.length-1)?"yellow":"white";
 		audioTitle.textContent=audioMix[i];
 		audioE.src=audioMix[i];
-		audioE.controls= false;
+		audioE.controls= true;
 		audioE.autoplay= false;
 		audioT.appendChild(audioE);
 		audioT.appendChild(audioTitle);
