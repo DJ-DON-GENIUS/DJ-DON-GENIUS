@@ -8,7 +8,7 @@
 	var audioE = document.createElement('audio');
 	var audioTitle=document.createElement('p');
 		//audioTitle.setAttribute("href", "postDownload");
-		audioTitle.setAttribute("onclick", "postPage(event)");
+		//audioTitle.setAttribute("onclick", "postPage(event)");
 		//audioTitle.setAttribute("href", "postDownload");
 		audioTitle.style.color=(i==audioMix.length-1)?"yellow":"white";
 		audioTitle.textContent=audioMix[i];
