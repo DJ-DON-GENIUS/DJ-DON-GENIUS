@@ -18,6 +18,8 @@
 		audioT.appendChild(audioTitle);
 	var lin   =document.createElement('br');
 		audioT.appendChild(lin);
+	var hr = document.createElement('hr');
+      		  audioT.appendChild(hr);
 		
 
 		}
