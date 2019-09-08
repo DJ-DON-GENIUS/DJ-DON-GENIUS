@@ -16,10 +16,11 @@
 		audioE.autoplay= false;
 		audioT.appendChild(audioE);
 		audioT.appendChild(audioTitle);
-	var lin   =document.createElement('br');
-		audioT.appendChild(lin);
+	//var lin   =document.createElement('br');
+	//	audioT.appendChild(lin);
 	var hr = document.createElement('hr');
-      		  audioT.appendChild(hr);
+		hr.style.color=(i==audioMix.length-1)?"navy":"blue";
+      		  audioTitle.appendChild(hr);
 		
 
 		}
