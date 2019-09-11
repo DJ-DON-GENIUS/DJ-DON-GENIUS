@@ -25,7 +25,7 @@
 		
 
 		}
-	sup.textContent = audioMix.length - 1
+	sup.textContent = audioMix.length
 	}
 
 function postPage(event){
