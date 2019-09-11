@@ -1,5 +1,5 @@
 
-	window.onload=function(){
+	window.onload=function music(){
 	var audioT=document.getElementById("audioD");
 	var sup = document.getElementById("su");
 	var audioMix =["hiphop_mix.mp3","NAIJAMIX-36.mp3","testing (32).mp3","testing (36).mp3","CLUB_MIX_NIGERIA-26.mp3","CLUB_mix3.mp3","MID_WEEK_CLUBBING.mp3","PARTY-TIME-NIAJA.mp3"," COOL-JAMZ (1).mp3","COOL-JAMZ-2.mp3"];
