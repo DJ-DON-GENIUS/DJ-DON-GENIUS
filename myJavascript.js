@@ -41,3 +41,7 @@ function postPage(event){
 	<audio src="${event.currentTarget.textContent}" controls="true"></audio></div><hr color="yellow"><div style="background-Color: green; color: white"><b>COMMENTS: </b></div>`;
         //event.stopPropagation();
 }
+
+function videos(){
+ document.alert("no availble video for download yet, it will be shown on available downloads soon, thank you for your patient");
+}
