@@ -48,5 +48,5 @@ function postPage(event){
 }
 
 function videos(){
- alert("sorrt, no availble video for download yet, it will be shown on available downloads soon, thank you for your patient");
+ alert("sorry, no availble video for download yet, it will be shown on available downloads soon, thank you for your patient");
 }
