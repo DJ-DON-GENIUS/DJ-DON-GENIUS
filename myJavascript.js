@@ -3,7 +3,7 @@
 	var audioT=document.getElementById("audioD");
 	var sup = document.getElementById("su");
 	var audioMix =["hiphop_mix.mp3","NAIJAMIX-36.mp3","testing (32).mp3","testing (36).mp3","CLUB_MIX_NIGERIA-26.mp3","CLUB_mix3.mp3","MID_WEEK_CLUBBING.mp3","PARTY-TIME-NIAJA.mp3"," COOL-JAMZ (1).mp3","COOL-JAMZ-2.mp3"];
-
+	var audioR = audioMix.reverse();
 	for(i=0; i< audioMix.length; i++){
 	var audioE = document.createElement('audio');
 	var audioTitle=document.createElement('p');
@@ -43,5 +43,5 @@ function postPage(event){
 }
 
 function videos(){
- alert("no availble video for download yet, it will be shown on available downloads soon, thank you for your patient");
+ alert("sorrt, no availble video for download yet, it will be shown on available downloads soon, thank you for your patient");
 }
