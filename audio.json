@@ -1,0 +1,45 @@
+ {
+     "artists": [{
+         "artistname": "DJ DON GENIUS",
+         "title": "Democray DAy.mp3",
+         "date": "25 dec",
+         "year": "2019",
+         "genre": "afrobeat"
+     }, {
+         "artistname": "DJ DON GENIUS",
+         "title": "GROVING-TIME-2.mp3",
+         "date": "25 aug",
+         "year": "2019",
+         "genre": "afrobeat"
+     }, {
+         "artistname": "DJ DON GENIUS",
+         "title": "IF-U-KNOW.mp3",
+         "date": "25 sept",
+         "year": "2019",
+         "genre": "afrobeat"
+     }, {
+         "artistname": "DJ DON GENIUS",
+         "title": "hiphop_mix.mp3",
+         "date": "25 july",
+         "year": "2019",
+         "genre": "hiphop"
+     }, {
+         "artistname": "DJ DON GENIUS",
+         "title": "PARTY-TIME-NIAJA.mp3",
+         "date": "25 june",
+         "year": "2019",
+         "genre": "party"
+     }, {
+         "artistname": "DJ DON GENIUS",
+         "title": "PARTY-TIME-NIAJA.mp3",
+         "date": "25 june",
+         "year": "2019",
+         "genre": "party"
+     }, {
+         "artistname": "DJ DON GENIUS",
+         "title": "PARTY-TIME-NIAJA.mp3",
+         "date": "25 june",
+         "year": "2019",
+         "genre": "party"
+     }, ]
+ }
