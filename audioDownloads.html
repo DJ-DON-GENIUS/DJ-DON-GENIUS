@@ -1,0 +1,53 @@
+<script>
+    fetch("https://raw.githubusercontent.com/DJ-DON-GENIUS/DJ-DON-GENIUS/master/audio.json")
+        .then(function(response) {
+            return response.text();
+        })
+        .then(function(data) {
+            alert('Request successful', data)
+            var musics = JSON.parse(data);
+            detail(musics);
+        })
+        .catch(function(error) {
+            alert('Request failed', error)
+        });
+
+    function detail(musics) {
+
+        // Put the data into a variable and format with HTML tags
+        /*  var output = "<h1 id='dj'>DJ DON GENIUS</h1>";
+          output += "<ul>";*/
+        var music = document.getElementById("music");
+
+        // console.log(musics.length);
+        for (i = 0; i < musics.length; i++) {
+            console.log(musics[i].title);
+            // var p = document.createElement("p");
+            //p.textContent = musics[i].title;
+            //music.appendChild(p);
+            /*document.write('<P><b>id:' + JSON.parse(text)[i].id + '</p>' + '<P>title:' + JSON.parse(text)[i].title + '</p></b>' + '<P>body:' + JSON.parse(text)[i].body + '</p><br/>');*/
+            document.body.innerHTML += '<ul><li> ARTIST :' + musics[i].artistname + '<br>MIX TITLE :' + musics[i].title + ' DATE:' + musics[i].date + ' <br>GENRE:' + musics[i].genre + ' <br><audio controls="true" src="' + musics[i].title + '"> </audio></li></ul><hr>';
+            //document.body.music.innerHTML = `hello<hr>`;
+        }
+        /* output += "</ul>";
+
+         // Output the data to the "artistList" element
+         document.getElementById("music").innerHTML = output;*/
+
+
+    };
+    window.onload = detail;
+</script>
+
+<body>
+    <div id="music">
+
+
+        music
+
+    </div>
+
+
+
+
+</body>
