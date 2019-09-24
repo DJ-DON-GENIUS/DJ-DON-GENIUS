@@ -1,5 +1,4 @@
- {
-     "artists": [{
+[{
          "artistname": "DJ DON GENIUS",
          "title": "Democray DAy.mp3",
          "date": "25 dec",
@@ -41,5 +40,4 @@
          "date": "25 june",
          "year": "2019",
          "genre": "party"
-     }, ]
- }
+     }]
