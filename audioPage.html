@@ -1,0 +1,178 @@
+<a href='https://www.symptoma.es/'>symptom checker</a>
+<script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=a84b15ec58fa7cc2cc2606cd7ea3bae0835b6c32'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/574063/t/0"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>★DJ DON GENIUS★</title>
+<style>
+    body {
+        background-color: darkgray;
+        margin: auto;
+    }
+    
+    sup {
+        background-color: red;
+        color: white;
+        font-style: initial;
+        font-size: medium;
+        border-radius: 20%;
+        padding: 1px 3px;
+        border-radius: 2px;
+    }
+    
+    .nav ul,
+    a {
+        background-color: gray;
+        color: yellow;
+        padding: 3px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 2px;
+        border-radius: 10px;
+        width: 100%;
+    }
+    
+    li {
+        display: inline-block;
+        // margin: 10px;
+        background-color: cadetblue;
+    }
+    
+    .nav {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        z-index: 1;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: row;
+        // text-align: center;
+        color: white;
+        margin-top: -20px;
+    }
+    
+    .main div {
+        background-color: teal;
+        display: inline-block;
+        width: 65vw;
+        // height: 90vh;
+        clear: both;
+        // margin: auto;
+        margin-right: 0.5vw;
+        margin-left: 0.5vw;
+        text-align: center;
+    }
+    
+    .downloads ul {
+        display: inline-block;
+        // background-color: grey;
+        width: inherit;
+        text-align: center;
+        //margin: auto;
+        //  margin-left: 0px;
+        text-decoration: underline;
+        // padding-right: 3px blue;
+        color: yellow;
+        padding-left: 0px;
+        margin: 0px auto;
+    }
+    
+    audio {
+        width: 23vw;
+        background-color: black;
+        margin: auto;
+        //height: 5vh;
+    }
+    
+    div.banner {
+        background-image: url("genius.jpg");
+        background-repeat: no-repeat;
+        // margin: auto;
+        background-size: 100%;
+        display: ;
+    }
+    
+    .footer {
+        background-color: black;
+        padding: 20px 20px yellow;
+        color: white;
+        text-align: center;
+        height: 30px;
+        justify-content: ;
+        // clear: both;
+    }
+    
+    span {
+        color: white;
+    }
+</style>
+
+
+<body>
+    <section class="nav">
+        <ul>
+            <li><a href="index.html">HOME </a></li><span>||</span>
+            <li>DJ LOGIN </li><span>||</span>
+            <li>ABOUT </li><span>||</span>
+            <li>CONTROLLER MAPPING</li>
+        </ul>
+    </section>
+    <section class="main">
+
+        <div class="downloads" id="audioD">★AVAILABLE DOWNLOADS <b>★<sup id="su">3</sup></b>
+            <ul>
+                <li onclick="music()">MUSIC MIX<b>★<sup id="suA">3</sup></b></li> <span>||</span>
+                <li onclick="videos()">VIDEO MIX<b>★<sup id="suV">3</sup></b></li>
+                <hr style='color: yellow'>
+            </ul>
+        </div>
+        <div class="banner">
+
+        </div>
+    </section>
+    <section class="footer">copyright & GENIUS</section>
+    <script>
+        fetch("https://raw.githubusercontent.com/DJ-DON-GENIUS/DJ-DON-GENIUS/master/audio.json")
+            .then(function(response) {
+                return response.text();
+            })
+            .then(function(data) {
+                alert('Request successful', data)
+                var musics = JSON.parse(data);
+                detail(musics);
+            })
+            .catch(function(error) {
+                alert('Request failed', error)
+            });
+
+        function detail(musics) {
+            // Put the data into a variable and format with HTML tags
+            /*  var output = "<h1 id='dj'>DJ DON GENIUS</h1>";
+              output += "<ul>";*/
+            var music = document.getElementById("audioD");
+            var musicCount = document.getElementById("suA");
+            musicCount.textContent = musics.length;
+            // console.log(musics.length);
+            for (i = 0; i < musics.length; i++) {
+                console.log(musics[i].title);
+                // var p = document.createElement("p");
+                //p.textContent = musics[i].title;
+                //music.appendChild(p);
+                /*document.write('<P><b>id:' + JSON.parse(text)[i].id + '</p>' + '<P>title:' + JSON.parse(text)[i].title + '</p></b>' + '<P>body:' + JSON.parse(text)[i].body + '</p><br/>');*/
+                music.innerHTML += '<ul style="color:white"><li><b> ARTIST :</b>' + musics[i].artistname + '<br/><b>MIX TITLE </b>:' + musics[i].title + '<br/><b> DATE:</b>' + musics[i].date + ' <br/><b>GENRE:<b/>' + musics[i].genre + ' <br/><audio controls="true" src="' + musics[i].title + '"> </audio><button id="likes">like</button><br/>comment : <input type="text"></input><p id="comments">content</p></li></ul><hr>';
+                //document.body.music.innerHTML = `hello<hr>`;
+            }
+            /* output += "</ul>";
+             // Output the data to the "artistList" element
+             document.getElementById("music").innerHTML = output;*/
+        };
+        window.onload = detail;
+    </script>
+</body>
