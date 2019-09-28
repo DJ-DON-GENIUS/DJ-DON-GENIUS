@@ -1,13 +1,52 @@
 [{
          "artistname": "DJ DON GENIUS",
+         "title": "baba_slow (1).mp3",
+         "date": "Sep 28, 2019",
+         "year": "2019",
+         "genre": "afrobeat",
+         "comment": "keep enjoyin"
+         "downloadCount": 10,
+         "likes": 50
+     },{
+         "artistname": "DJ DON GENIUS",
          "title": "Democray DAy.mp3",
-         "date": "25 dec",
+         "date": "Dec 12, 2018",
          "year": "2019",
          "genre": "afrobeat"
      }, {
          "artistname": "DJ DON GENIUS",
+         "title": "RAGEA (2).mp3.mp3",
+         "date": "Sep 23, 2019",
+         "year": "2019",
+         "genre": "afrobeat"
+     },{
+         "artistname": "DJ DON GENIUS",
          "title": "GROVING-TIME-2.mp3",
          "date": "25 aug",
+         "year": "2019",
+         "genre": "afrobeat"
+     }, {
+         "artistname": "DJ DON GENIUS",
+         "title": "GROVING-TIME.mp4.mp3",
+         "date": "19 Sept, 2019",
+         "year": "2019",
+         "genre": "afrobeat"
+     }, {
+         "artistname": "DJ DON GENIUS",
+         "title": "COOL-JAMZ-2.mp3",
+         "date": "09 Sept, 2019",
+         "year": "2019",
+         "genre": "afrobeat"
+     }, {
+         "artistname": "DJ DON GENIUS",
+         "title": "COOL-JAMZ (1).mp3",
+         "date": "09, Sept 2019",
+         "year": "2019",
+         "genre": "afrobeat"
+     }, {
+         "artistname": "DJ DON GENIUS",
+         "title": "CLUB_mix3.mp3",
+         "date": "26 Aug 2019",
          "year": "2019",
          "genre": "afrobeat"
      }, {
@@ -16,28 +55,49 @@
          "date": "25 sept",
          "year": "2019",
          "genre": "afrobeat"
+     },{
+         "artistname": "DJ DON GENIUS",
+         "title": "MID_WEEK_CLUBBING.mp3.mp3",
+         "date": "27 Aug 2019",
+         "year": "2019",
+         "genre": "naiajClub mix",
+          "comment":"hello"
      }, {
          "artistname": "DJ DON GENIUS",
-         "title": "hiphop_mix.mp3",
-         "date": "25 july",
+         "title": "PARTY-TIME-NIAJA.mp3",
+         "date": "29 Aug 2019",
+         "year": "2019",
+         "genre": "afroNaija",
+          "comment":"hello"
+     }, {
+         "artistname": "DJ DON GENIUS",
+         "title": "NAIJAMIX-36.mp3",
+         "date": "08 Aug 2019",
+         "year": "2019",
+         "genre": "afroNaija",
+          "comment":"hello"
+     }, {
+         "artistname": "DJ DON GENIUS",
+         "title": "SUMMER_CLUB_mix.mp3",
+         "date": "22 06 2019",
          "year": "2019",
          "genre": "hiphop"
      }, {
          "artistname": "DJ DON GENIUS",
-         "title": "PARTY-TIME-NIAJA.mp3",
-         "date": "25 june",
+         "title": "hiphop_mix.mp3",
+         "date": "06 Aug 2019",
+         "year": "2019",
+         "genre": "hiphop"
+     }, {
+         "artistname": "DJ DON GENIUS",
+         "title": "testing (32).mp3",
+         "date": "06 Aug 2019",
          "year": "2019",
          "genre": "party"
      }, {
          "artistname": "DJ DON GENIUS",
-         "title": "PARTY-TIME-NIAJA.mp3",
-         "date": "25 june",
-         "year": "2019",
-         "genre": "party"
-     }, {
-         "artistname": "DJ DON GENIUS",
-         "title": "PARTY-TIME-NIAJA.mp3",
-         "date": "25 june",
+         "title": "testing (36).mp3",
+         "date": "06 Aug 2019",
          "year": "2019",
          "genre": "party"
      }]
