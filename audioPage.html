@@ -147,10 +147,11 @@
             .then(function(data) {
                 alert('Request successful', data)
                 var musics = JSON.parse(data);
-               return detail(musics);
+                detail(musics);
             })
             .catch(function(error) {
-                alert('Request failed', error)
+                alert('Request failed', error);
+            return
             });}
         
             var addList= 1;
