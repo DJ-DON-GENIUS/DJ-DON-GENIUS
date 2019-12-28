@@ -157,13 +157,15 @@
         }
         
             var addList= 1;
+            listEnd=10;
+        
        /* function more(){
             addList=+10;
         detail(musics);
            // loa();
         }*/
         function detail(musics) {
-            loa();
+           // loa();
             // Put the data into a variable and format with HTML tags
             /*  var output = "<h1 id='dj'>DJ DON GENIUS</h1>";
               output += "<ul>";*/
@@ -172,7 +174,7 @@
             musicCount.textContent = musics.length;
             // console.log(musics.length);
             var list=musics.length;
-            for (i = addList; i < 10; i++) {
+            for (i = addList; i < listEnd; i++) {
                // console.log(musics[i].title);
                 // var p = document.createElement("p");
                 //p.textContent = musics[i].title;
@@ -185,6 +187,7 @@
              // Output the data to the "artistList" element
              document.getElementById("music").innerHTML = output;*/
             addList=+10;
+            listEnd=+10;
             music.innerHTML+='<button onclick="detail(musics)">more music</button>' 
              //return false;
         };
