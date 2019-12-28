@@ -175,7 +175,7 @@
             musicCount.textContent = musics.length;
             // console.log(musics.length);
             var list=musics.length;
-            for (i = addList; i < listEnd; i++) {
+            for (addList; addList < listEnd; i++) {
                // console.log(musics[i].title);
                 // var p = document.createElement("p");
                 //p.textContent = musics[i].title;
@@ -189,7 +189,7 @@
              document.getElementById("music").innerHTML = output;*/
             addList=+10;
             listEnd=+10;
-            music.innerHTML+='<button onclick="loa()">more music</button>' 
+            music.innerHTML+='<button onclick="detail(musics)">more music</button>' 
              //return false;
         };
         window.onload = loa;
