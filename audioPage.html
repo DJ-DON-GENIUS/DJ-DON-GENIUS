@@ -157,13 +157,13 @@
         }
         
             var addList= 1;
-        function more(){
+       /* function more(){
             addList=+10;
         detail(musics);
            // loa();
-        }
+        }*/
         function detail(musics) {
-            loa();
+           // loa();
             // Put the data into a variable and format with HTML tags
             /*  var output = "<h1 id='dj'>DJ DON GENIUS</h1>";
               output += "<ul>";*/
@@ -184,7 +184,8 @@
             /* output += "</ul>";
              // Output the data to the "artistList" element
              document.getElementById("music").innerHTML = output;*/
-            music.innerHTML+='<button onclick="more()">more music</button>' 
+            addList=+10;
+            music.innerHTML+='<button onclick="detail(musics)">more music</button>' 
              //return false;
         };
         window.onload = loa;
