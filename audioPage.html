@@ -137,7 +137,7 @@
 
         </div>
     </section>
-    <section class="footer">copyright & GENIUS</section>
+    <section class="footer">copyright c GENIUS</section>
     <script>
         function loa(){
         fetch("https://raw.githubusercontent.com/DJ-DON-GENIUS/DJ-DON-GENIUS/master/audio.json")
@@ -153,16 +153,18 @@
             .catch(function(error) {
                 alert('Request failed', error)
         
-            });}
+            });
+        }
         
             var addList= 1;
         function more(){
             addList=+10;
-        detail(musics);
+        //detail(musics);
+            loa();
         
         }
         function detail(musics) {
-            loa();
+           // loa();
             // Put the data into a variable and format with HTML tags
             /*  var output = "<h1 id='dj'>DJ DON GENIUS</h1>";
               output += "<ul>";*/
@@ -186,6 +188,6 @@
             music.innerHTML+='<button onclick="more()">more music</button>' 
              return false;
         };
-        window.onload = detail;
+        window.onload = loa;
     </script>
 </body>
