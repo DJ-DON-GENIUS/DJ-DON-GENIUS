@@ -148,7 +148,7 @@
                 alert('Request successful', data)
                 var musics = JSON.parse(data);
                 detail(musics);
-            return false;
+           
             })
             .catch(function(error) {
                 alert('Request failed', error)
@@ -184,6 +184,7 @@
              // Output the data to the "artistList" element
              document.getElementById("music").innerHTML = output;*/
             music.innerHTML+='<button onclick="more()">more music</button>' 
+             return false;
         };
         window.onload = detail;
     </script>
