@@ -148,6 +148,7 @@
                 alert('Request successful', data)
                 var musics = JSON.parse(data);
                 detail(musics);
+            return false;
             })
             .catch(function(error) {
                 alert('Request failed', error)
