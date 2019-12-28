@@ -139,8 +139,8 @@
     </section>
     <section class="footer">copyright c GENIUS</section>
     <script>
-       //function loa(){return
-        fetch("https://raw.githubusercontent.com/DJ-DON-GENIUS/DJ-DON-GENIUS/master/audio.json")
+       function loa(){
+           return fetch("https://raw.githubusercontent.com/DJ-DON-GENIUS/DJ-DON-GENIUS/master/audio.json")
             .then(function(response) {
                 return response.text();
             })
@@ -154,7 +154,7 @@
                 alert('Request failed', error)
         
             });
-      //  }
+        }
         
             var addList= 1;
         function more(){
@@ -163,7 +163,7 @@
            // loa();
         }
         function detail(musics) {
-           // loa();
+            loa();
             // Put the data into a variable and format with HTML tags
             /*  var output = "<h1 id='dj'>DJ DON GENIUS</h1>";
               output += "<ul>";*/
