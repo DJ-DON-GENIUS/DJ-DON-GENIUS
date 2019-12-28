@@ -139,6 +139,7 @@
     </section>
     <section class="footer">copyright & GENIUS</section>
     <script>
+        funcion loa(){
         fetch("https://raw.githubusercontent.com/DJ-DON-GENIUS/DJ-DON-GENIUS/master/audio.json")
             .then(function(response) {
                 return response.text();
@@ -150,7 +151,7 @@
             })
             .catch(function(error) {
                 alert('Request failed', error)
-            });
+            });}
         
             var addList= 1;
         function more(){
@@ -159,6 +160,7 @@
         
         }
         function detail(musics) {
+            loa();
             // Put the data into a variable and format with HTML tags
             /*  var output = "<h1 id='dj'>DJ DON GENIUS</h1>";
               output += "<ul>";*/
