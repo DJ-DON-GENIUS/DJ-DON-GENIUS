@@ -151,7 +151,13 @@
             .catch(function(error) {
                 alert('Request failed', error)
             });
-
+        
+            var addList= 1;
+        function more(){
+            addList=+10
+        detail(musics);
+        
+        }
         function detail(musics) {
             // Put the data into a variable and format with HTML tags
             /*  var output = "<h1 id='dj'>DJ DON GENIUS</h1>";
@@ -161,7 +167,7 @@
             musicCount.textContent = musics.length;
             // console.log(musics.length);
             var list=musics.length;
-            for (i = 0; i < 10; i++) {
+            for (i = addList; i < 10; i++) {
                // console.log(musics[i].title);
                 // var p = document.createElement("p");
                 //p.textContent = musics[i].title;
