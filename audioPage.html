@@ -147,7 +147,7 @@
             .then(function(data) {
                 alert('Request successful', data)
                 var musics = JSON.parse(data);
-                detail(musics);
+               return detail(musics);
             })
             .catch(function(error) {
                 alert('Request failed', error)
