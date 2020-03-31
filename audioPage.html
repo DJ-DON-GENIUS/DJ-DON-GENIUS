@@ -140,6 +140,7 @@
     <section class="footer">copyright c GENIUS</section>
     <script>
         var addList= 0;
+	 var musics;
          var listEnd=10;
        function loa(){
            return fetch("https://raw.githubusercontent.com/DJ-DON-GENIUS/DJ-DON-GENIUS/master/audio.json")
@@ -148,7 +149,7 @@
             })
             .then(function(data) {
                 alert('Request successful', data)
-                var musics = JSON.parse(data);
+                 musics = JSON.parse(data);
                 detail(musics);
            
             })
