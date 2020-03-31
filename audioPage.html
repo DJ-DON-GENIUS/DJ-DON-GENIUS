@@ -181,7 +181,7 @@
                 //p.textContent = musics[i].title;
                 //music.appendChild(p);
                 /*document.write('<P><b>id:' + JSON.parse(text)[i].id + '</p>' + '<P>title:' + JSON.parse(text)[i].title + '</p></b>' + '<P>body:' + JSON.parse(text)[i].body + '</p><br/>');*/
-                music.innerHTML += '<ul style="color:white"><li><b> ARTIST :</b>' + musics[i].artistname + '<br/><b>MIX TITLE </b>:' + musics[i].title + '<br/><b> DATE:</b>' + musics[i].date + ' <br/><b>GENRE:<b/>' + musics[i].genre + ' <br/><audio controls="true" src="' + musics[i].title + '"> </audio><button id="likes">like</button><br/>comment : <input type="text"></input><p id="comments">content</p></li></ul><hr>';
+                music.innerHTML += '<ul style="color:white"><li><b> ARTIST :</b>' + musics[i].artistname + '<br/><b>MIX TITLE </b>:' + musics[i].title + '<br/><b> DATE:</b>' + musics[i].date + ' <br/><b>GENRE:<b/>' + musics[i].genre + ' <br/><audio controls="true" src="' + musics[i].title + '"> </audio><button id="likes">like</button><br/><button onClick="postPage(event)">Tracklist</button><br/>comment : <input type="text"></input><p id="comments">content</p></li></ul><hr>';
                 //document.body.music.innerHTML = `hello<hr>`;
             }
             /* output += "</ul>";
@@ -192,6 +192,19 @@
             music.innerHTML+='<button onclick="detail(musics)">more music</button>' 
              //return false;
         };
+         function postPage(event) {
+            //var ds=document.getElementById(vs).text;
+            //alert("i am clicked: "+ds);
+            //alert(event.target.nodeName);
+            //alert("You clicked: "+ this.vs);
+            //alert(event.target);
+            document.body.innerHTML = `<div><h1 style="color:green">HAPPY DOWNLOAD AND LISTENING</h1> <p><a href="index.html">HOME PAGE</a></p><br><p><a href="downloads3.html">BACK TO DOWNLOADE PAGE</a></p></br>
+	<p style="color: white; background-Color: green">TITLE :   <b>
+	${event.currentTarget.textContent}<br/> </b>
+	 BY :  <b> DJ DON GENIUS</b></br></p>
+	<audio src="${event.currentTarget.textContent}" controls="true"></audio></div><hr color="yellow"><div style="background-Color: green; color: white"><b>COMMENTS: </b></div>`;
+            //event.stopPropagation();
+        }
         window.onload = loa;
     </script>
 </body>
