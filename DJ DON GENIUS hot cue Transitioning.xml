@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper device="KEYBOARD" author="Atomix Productions" version="830" date="2024-01-10">
+	<map value="TAB" action="deck active select" />
+	<map value="CTRL+TAB" action="sideview +1" />
+	<map value="CTRL+SHIFT+TAB" action="sideview -1" />
+	<map value="SPACE" action="deck default play ? pause : play" />
+	<map value="SHIFT+SPACE" action="sync" />
+	<map value="ALT+SPACE" action="mix_now" />
+	<map value="CTRL+SPACE" action="automix" />
+	<map value="NUM-" action="pitch -0.05" />
+	<map value="NUM+" action="pitch +0.05" />
+	<map value="SHIFT+NUM-" action="pitch -0.01" />
+	<map value="SHIFT+NUM+" action="pitch +0.01" />
+	<map value="CTRL+NUM-" action="pitch -0.2" />
+	<map value="CTRL+NUM+" action="pitch +0.2" />
+	<map value="NUM*" action="pitch 100%" />
+	<map value="CTRL+NUM*" action="pitch_reset" />
+	<map value="LEFT" action="nudge +10ms" />
+	<map value="RIGHT" action="nudge -10ms" />
+	<map value="SHIFT+LEFT" action="pitch_bend +5%" />
+	<map value="SHIFT+RIGHT" action="pitch_bend -5%" />
+	<map value="PAGE.DOWN" action="crossfader &gt;50% ? deck 1 filter 70% &amp; deck 2 filter 50% &amp; crossfader +10% : crossfader +10% " />
+	<map value="PAGE.UP" action="crossfader &lt;50% ? deck 2 filter 70% &amp; deck 1 filter 50% &amp; crossfader -10% : crossfader -10%" />
+	<map value="CTRL+PAGE.DOWN" action="crossfader 100%" />
+	<map value="CTRL+PAGE.UP" action="crossfader 0%" />
+	<map value="ESCAPE" action="effect_active &quot;echo&quot; off &amp; loop_roll 0.2 &amp; deck default effect_active &quot;cut&quot; off &amp; deck active effect_active &quot;cut&quot; off &amp; deck default loop_exit &amp; deck active loop_exit &amp; reverse? reverse : effect_disable_all" />
+	<map value="SHIFT+ESCAPE" action="settings" />
+	<map value="2" action="loop 2" />
+	<map value="4" action="loop 4" />
+	<map value="5" action="loop 8" />
+	<map value="6" action="loop 16" />
+	<map value="7" action="loop 32" />
+	<map value="8" action="loop_half" />
+	<map value="9" action="loop_double" />
+	<map value="0" action="reloop" />
+	<map value="ALT+1" action="goto_cue 1" />
+	<map value="ALT+2" action="goto_cue 2" />
+	<map value="ALT+3" action="goto_cue 3" />
+	<map value="ALT+4" action="goto_cue 4" />
+	<map value="ALT+5" action="goto_cue 5" />
+	<map value="ALT+6" action="goto_cue 6" />
+	<map value="ALT+7" action="goto_cue 7" />
+	<map value="ALT+8" action="goto_cue 8" />
+	<map value="ALT+9" action="deck default loop_exit &amp; deck active loop_exit" />
+	<map value="ALT+0" action="goto_cue 10" />
+	<map value="CTRL+1" action="set_cue 1" />
+	<map value="CTRL+2" action="set_cue 2" />
+	<map value="CTRL+3" action="set_cue 3" />
+	<map value="CTRL+4" action="set_cue 4" />
+	<map value="CTRL+5" action="set_cue 5" />
+	<map value="CTRL+6" action="set_cue 6" />
+	<map value="CTRL+7" action="set_cue 7" />
+	<map value="CTRL+8" action="set_cue 8" />
+	<map value="CTRL+9" action="set_cue 9" />
+	<map value="CTRL+0" action="set_cue 10" />
+	<map value="F1" action="sampler 1 play_stutter &amp; deck active level % while_pressed" />
+	<map value="F2" action="sampler 2 play_stutter" />
+	<map value="F4" action="sampler 4 play_stutter" />
+	<map value="F5" action="sampler 5 play_stutter" />
+	<map value="F6" action="sampler 6 play_stutter" />
+	<map value="F7" action="sampler 7 play_stutter" />
+	<map value="F8" action="sampler 8 play_stutter" />
+	<map value="F9" action="sampler 9 play_stutter" />
+	<map value="F10" action="sampler 10 play_stutter" />
+	<map value="F11" action="sampler 11 play_stutter" />
+	<map value="F12" action="sampler 12 play_stutter" />
+	<map value="SHIFT+F1" action="sampler 1 play while_pressed" />
+	<map value="SHIFT+F2" action="sampler 2 play while_pressed" />
+	<map value="SHIFT+F3" action="sampler 3 play while_pressed" />
+	<map value="SHIFT+F4" action="sampler 4 play while_pressed" />
+	<map value="SHIFT+F5" action="sampler 5 play while_pressed" />
+	<map value="SHIFT+F6" action="sampler 6 play while_pressed" />
+	<map value="SHIFT+F7" action="sampler 7 play while_pressed" />
+	<map value="SHIFT+F8" action="sampler 8 play while_pressed" />
+	<map value="SHIFT+F9" action="sampler 9 play while_pressed" />
+	<map value="SHIFT+F10" action="sampler 10 play while_pressed" />
+	<map value="SHIFT+F11" action="sampler 11 play while_pressed" />
+	<map value="SHIFT+F12" action="sampler 12 play while_pressed" />
+	<map value="SHIFT+P" action="pause &amp; up ? play" />
+	<map value="S" action="stop &amp; level 100% &amp; loop_exit &amp; effect_active &apos;cut&apos; off &amp; effect_active &apos;echo&apos; off 1 &amp; delete_cue 8 &amp; delete_cue 7 &amp; delete_cue 6 &amp; reverse? reverse : nothing " />
+	<map value="C" action="level 100% &amp; deck active level 100% while_pressed &amp; down ? deck default hot_cue : deck default stop" />
+	<map value="CTRL+F" action="down ? level 100% : level 0%" />
+	<map value="CTRL+BACK" action="goto_last_folder" />
+	<map value="CTRL+V" action="video" />
+	<map value="H" action="effect_active &apos;backspin&apos; off &amp; deck default hot_cue 1 &amp; effect_active &apos;echo&apos; off &amp; effect_active &apos;reverb&apos; off &amp; deck default level &amp; effect_active &apos;backspin&apos; off &amp; key 0 &amp; delete_cue 6 &amp; delete_cue 7 &amp; deck active effect_active &quot;cut&quot; off &amp; deck default level 100%" />
+	<map value="F" action="crossfader 50% &amp; deck active level 100% &amp; deck default filter 50% &amp; eq_low 50% &amp; deck default level 100%" />
+	<map value="M" action=" reverse while_pressed &amp; down ? nothing : hot_cue 2 &amp; level -4" />
+	<map value="X" action="reverse while_pressed &amp; effect_active &quot;backspin&quot; 1 while_pressed &amp; up ? deck default has_cue 7 ? deck default goto_cue 7 : deck default goto_cue 7 &amp; deck active level 100% : nothing" />
+	<map value="Y" action="level 100% while_pressed &amp; up ? level 75% &amp; filter -2%" />
+	<map value="," action="level 100% &amp;  down ? scratch +30ms &amp;  default level 0% &amp; deck active level 100% : scratch -30ms  &amp; deck active level 0%" />
+	<map value="/" action="cue_play &amp; level 100% &amp; deck default filter 70% ? deck default level 85% " />
+	<map value="]" action="deck default load" />
+	<map value="P" action="hot_cue &amp; key_move +1 &amp; up ? deck default level 0% : deck default filter 50% &amp; level 100%" />
+	<map value="." action="set_cue 7 &amp; reverse ? reverse &amp; level 100% &amp; filter -1 : reverse &amp; level 0% &amp; goto_cue 7" />
+	<map value="\" action="deck default filter 70% &amp; deck default filter 70% ? deck default level 85% &amp; play? nothing" />
+	<map value="`" action="goto_cue -1" />
+	<map value="&apos;" action="loop 2 while_pressed &amp; loop_half while_pressed &amp; effect_active &quot;echo&quot; while_pressed &amp; level -0.01" />
+	<map value="3" action="deck default loop &amp; level -0.01 &amp; deck default loop_half while_pressed &amp; up ? stop : nothing" />
+	<map value="APPS" action="effect_disable_all" />
+	<map value="CTRL+R" action="level 100% while_pressed &amp; down ? level 5% : level -3%" />
+	<map value="HOME" action="effect_active &apos;echo&apos; ? pause : effect_active &apos;echo&apos;  &amp; effect_active &apos;reverb&apos; off" />
+	<map value="SHIFT+R" action="level 100% while_pressed &amp; down ? level 5% : level +3%" />
+	<map value="CTRL+Y" action="level 100% while_pressed &amp; up ? level 75% &amp; filter +2%" />
+	<map value="CTRL+F1" action="sampler 1 play while_pressed &amp; deck default level 0% while_pressed &amp; stop" />
+	<map value="Caps Lock" action=" deck default level 100% &amp; play ? effect_active &apos;echo&apos; ? pause : effect_active &apos;echo&apos; &amp; deck default level 80% : effect_active &apos;echo&apos; off &amp; hot_cue" />
+	<map value="CTRL+END" action="pitch -0.8% &amp; down ? nothing : hot_cue 1 &amp; sync" />
+	<map value="CTRL+S" action="hot_cue 1 &amp; effect_active &apos;echo&apos; off &amp; effect_active &apos;reverb&apos; off &amp; deck default level" />
+	<map value="CTRL+T" action="level 100% ? up ?  level 0% : level 0% : level 100 &amp; down ? filter -0.01" />
+	<map value="O" action="deck active stop &amp; deck default hot_cue" />
+	<map value="SHIFT+T" action="level 100% ? up ?  level 0% : level 0% : level 100 &amp; down ? filter +0.01" />
+	<map value="SHIFT+Z" action="custom_button_name" />
+	<map value="SHIFT+0" action="V7_status" />
+	<map value="CTRL+Z" action=" pause &amp; scratch_dna &apos;-Z&apos;" />
+	<map value="CTRL+D" action="slip on &amp; effect_active &quot;scratch dna&quot;  &amp; repeat_start_instant &quot;slipIsBetter&quot; 33ms &amp; effect_active &quot;scratch dna&quot; ? nothing : slip off &amp; repeat_stop &quot;slipIsBetter&quot;" />
+	<map value="CTRL+ALT" action="deck active pitch -0.001 &amp; deck default pitch -0.001 " />
+	<map value="CTRL+=" action="loop 0.5 ?  stop &amp; loop_exit : play ? loop 0.5 &amp; effect_active &apos;echo&apos; : play &amp; effect_active &apos;echo&apos; off" />
+	<map value="CTRL+\" action="deck default filter 30% &amp; deck default filter 30% ? deck default level 85%" />
+	<map value="F3" action="sampler 3 play_stutter" />
+	<map value="CTRL+K" action="level -0.01 &amp; loop 1 while_pressed &amp; up ? loop &amp; stop" />
+	<map value="R" action="up ? deck default level 0% : deck default filter 50% &amp; level 100%" />
+	<map value="CTRL+`" action="scratch_dna &apos;CADA.EAEA&apos;" />
+	<map value="CTRL+Break" action="cue_stop &amp; scratch_dna &apos;.-Z&apos; " />
+	<map value="CTRL+G" action="cue_play &amp; deck default filter 70% ? deck default level 85%" />
+	<map value="ALT+G" action="cue_play &amp; deck default filter 70% ? deck default level 85%" />
+	<map value="SHIFT+ALT" action="deck active pitch +0.001 &amp; deck default pitch +0.001 " />
+	<map value="CTRL+HOME" action="key -2 while_pressed" />
+	<map value="SHIFT+HOME" action="key +2 while_pressed" />
+	<map value="RIGHT CTRL" action="scratch_dna &apos;EADaDaDa.EADA&apos; &amp; up? hot_cue 1 &amp; deck active effect_active &quot;cut&quot; off : deck active effect_active &quot;cut&quot;" />
+	<map value="SHIFT+A" action="effect_active &apos;backspin&apos;  while_pressed &amp; loop 0.5 while_pressed &amp; level -0.01" />
+	<map value="CTRL+N" action="cue_play &amp; filter 50% while_pressed  &amp; deck active level 0% while_pressed &amp; deck default level 100% &amp; holding 3000ms ? deck active " />
+	<map value="ALT+`" action="deck default scratch_dna &apos;CADA.EAEA&apos; &amp; deck active level 0% while_pressed" />
+	<map value="DELETE" action="effect_active &apos;cut&apos;  while_pressed &amp; video_fx &quot;spectral&quot; while_pressed" />
+	<map value="[" action=" &amp; key 0 &amp;  up ? deck default level 0% : deck default filter 50% &amp; level 100% &amp; hot_cue &amp; effect_active &quot;BrakeStart&quot; &amp; deck default level 100%" />
+	<map value="Q" action="deck default hot_cue &amp; deck active filter +0.002 &amp; deck default filter 50% &amp; up ? deck default hot_cue &amp; deck default level 100% &amp; deck active stop &amp; deck active filter 50%" />
+	<map value="ALT+." action="set_cue 7" />
+	<map value="CTRL+J" action="effect_active &quot;Beat Grid&quot; off  while_pressed  &amp; cue_play" />
+	<map value=";" action="down ? scratch +40ms &amp; level 100% : scratch -40ms &amp; level 0%  &amp; play ? level 100%" />
+	<map value="CTRL+P" action="cue_stop &amp; key_move -1 " />
+	<map value="D" action="scratch -60ms &amp; deck active level 100% &amp;  level 100% &amp; down ? scratch +60ms &amp; deck active level 90% :" />
+	<map value="CTRL+/" action="delete_cue 7 &amp; reverse? reverse : nothing" />
+	<map value="CTRL+," action="pitch -0.001" />
+	<map value="CTRL+." action="pitch +0.001" />
+	<map value="1" action="has_cue 9 ? goto_cue 9 : goto_cue 1 " />
+	<map value="CTRL+Q" action="deck active hold while_pressed &amp; deck default play  &amp; deck default level 0% while_pressed &amp; up ? deck active level 0% " />
+	<map value="L" action="deck default level 100% &amp; deck default play ? stop &amp; goto_cue 7 : down? scratch +60ms &amp; deck active level 90% : scratch -60ms &amp; deck active level 100%" />
+	<map value="CTRL+O" action="deck default hot_cue 1 &amp; deck active stop" />
+	<map value="ALT+Y" action="goto_cue 7 &amp; level 100% while_pressed &amp; up ? level 75% &amp; filter +2% " />
+	<map value="ALT+X" action="effect_active &quot;backspin&quot; 1 while_pressed &amp; level 100% while_pressed &amp; up ? level 75% &amp; filter +2%  &amp; hot_cue " />
+	<map value="ALT+C" action="cue_stop" />
+	<map value="CTRL+X" action="effect_active &quot;backspin&quot; while_pressed &amp; up ? goto_cue 1" />
+	<map value="ALT+V" action="level -2 down ?  level 85% : level 0%" />
+	<map value="T" action="up ? level 0% : deck default filter 70% &amp; level 85%" />
+	<map value="U" action="deck active hot_cue 6 &amp; deck default level 100% &amp; deck active level% &amp; deck active filter 50%" />
+	<map value="SHIFT+6" action="delete_cue 6 &amp; deck active delete_cue 6" />
+	<map value="=" action="has_cue 6 ? up ? goto_cue 6 &amp; cue_play : cue_play : set_cue 6" />
+	<map value="-" action="record" />
+	<map value="V" action="level 0% while_pressed" />
+	<map value="I" action="deck active stop &amp; deck active hot_cue 6 &amp; deck default level 100% &amp; deck active level% &amp; deck active filter 50%" />
+	<map value="SHIFT+7" action="delete_cue 7 &amp; delete_cue 7" />
+	<map value="ALT+\" action="mic_talkover off ? deck default level 70% &amp; deck active level 70% &amp; mic_talkover on : deck default level 100% &amp; deck active level 100 &amp; mic_talkover off" />
+	<map value="A" action="touchwheel_touch &amp; level 100% &amp; filter 50%" />
+	<map value="ALT+DELETE" action="deck default loop_exit" />
+	<map value="CTRL+UP" action="search" />
+	<map value="CTRL+-" action="mic &amp; deck default level 100% ? deck default level 15% &amp; deck active level 15% : deck default level 100% &amp; deck active level 100%" />
+	<map value="Z" action=" &amp; key 0 &amp;  up ? deck default level 0% : deck default filter 50% &amp; level 100% &amp; hot_cue &amp; effect_active &quot;BrakeStart&quot; &amp; deck default level 100%" />
+	<map value="CTRL+L" action="deck default level 100% &amp; down ? deck default scratch +60ms &amp; deck active level 90% &amp; video_transition_select strobe :  deck default has_cue 7 ? deck default goto_cue 7 : deck default goto_cue 1 &amp; deck active level 100%" />
+	<map value="ALT+L" action="deck activEe level 10% while_pressed &amp; down ? deck default scratch +20ms &amp; deck active level 90% : deck default scratch -20ms &amp; deck activeE level 100%" />
+	<map value="CTRL+]" action="scratch_dna &quot;CADA.EAEA&quot;" />
+	<map value="Pause" action="sampler_bank &quot;flute&quot;" />
+	<map value="CTRL+C" action="cue_play" />
+	<map value="CTRL+A" action="scratch_dna &apos;EADADADA.EaDa&apos; &amp; up? hot_cue 1 &amp;" />
+	<map value="CTRL+E" action="scratch_dna &apos;EADADADA.EaDa&apos; &amp; up? hot_cue 1 &amp; deck active stop &amp; deck default hot_cue 1 &amp; deck default level 100% &amp; deck default level% &amp; deck default filter 50%" />
+	<map value="SHIFT+1" action="delete_cue 1" />
+	<map value="SHIFT+2" action="delete_cue 2" />
+	<map value="SHIFT+3" action="delete_cue 3" />
+	<map value="SHIFT+4" action="delete_cue 4" />
+	<map value="SHIFT+5" action="delete_cue 5" />
+	<map value="SHIFT+I" action="key 0 &amp;  up ? deck default level 0% : deck default filter 50% &amp; level 100% &amp; hot_cue &amp; effect_active &quot;BrakeStart&quot; &amp; deck default level 100%" />
+	<map value="CTRL+I" action="key 0 &amp;  up ? deck active level 0% : deck active filter 50% &amp; level 100% &amp; hot_cue 6 &amp; " />
+	<map value="N" action="cue_play while_pressed &amp; filter 50% while_pressed  &amp; deck active level 0% while_pressed &amp; deck default level 100% &amp; holding 3000ms ? deck 1 goto_cue" />
+	<map value="ALT+U" action=" up ? deck default level 0% : deck default filter 70% &amp; deck default level 85% &amp; deck default goto bar 1 &amp; hot_cue 7 &amp; level -1" />
+	<map value="CTRL+U" action="key 0 &amp;  up ? deck default level 0% : deck default filter 50% &amp; level 100% &amp; hot_cue 6 &amp; " />
+	<map value="CTRL+W" action="scratch_dna &quot;DaaCaaCa.CACaDaaaaaCaaaa&quot; &amp; up ? goto_cue 7" />
+	<map value="CTRL+M" action="Only_stem vocal &amp; mute_stem vocal" />
+	<map value="CTRL+B" action="deck default effect_active &quot;backspin&quot; ?  up ? level 0% : deck default filter 70% &amp; level 85% : effect_active &quot;backspin&quot; on &amp; deck active level 100% " />
+	<map value="SHIFT+C" action="clone_deck &amp; pause" />
+	<map value="ALT+I" action="effect_active off &amp; video_crossfader 100% &amp; pause &amp; scratch +60ms &amp; goto_cue &amp; deck 1 volume 99% &amp; deck 1 filter 75% while_pressed &amp; deck 1 padfx &quot;cut&quot; 80% 60% smart_pressed &amp; volume 99%
+" />
+	<map value="ALT+O" action="effect_slider &quot;cut&quot; 1 100% &amp; effect_slider &quot;cut&quot; 2 50% &amp; pause &amp; down ? scratch -120ms : goto_cue &amp; effect &quot;cut&quot; active while_pressed &amp; deck 1 filter 75% while_pressed
+" />
+	<map value="ALT+P" action="effect &quot;backspin&quot; active while_pressed &amp; key_move +1 &amp; effect &quot;flanger&quot; active while_pressed" />
+	<map value="ALT+T" action="key 0 &amp; goto_cue &amp; play &amp; effect &quot;cut&quot; active off" />
+	<map value="ALT+END" action="pitch -0.5% &amp; down ? nothing : stop &amp; pitch_zero" />
+	<map value="END" action="scratch_dna &quot;DeBaDeBa.DADADeBa.DaDa.DfaEgaDfaEga&quot; &amp; deck active filter  while_pressed &amp; up ? deck default stop &amp; deck default has_cue 7 ? deck default goto_cue 7 : deck default goto_cue 1 &amp; deck active level 100% deck default goto_cue 1" />
+	<map value="ALT+R" action="play ? up ? level 0% : deck default filter 50% &amp; level 100% : " />
+	<map value="CTRL+Caps Lock" action="down ? effect_active &apos;echo&apos; &amp; level 80% : pause &amp; volume 100%" />
+	<map value="CTRL+;" action="down? effect_active &quot;cut&quot; off : deck active effect_active &quot;loop out&quot;" />
+	<map value="CTRL+[" action="deck active effect_active &quot;BrakeStart&quot; 1 while_pressed &amp; up ? deck default play : nothing" />
+	<map value="ALT+H" action="deck defaut effect_active &quot;backspin&quot; ? up ? deck defualt level 0% : deck default filter 50% &amp; level 100% : deck default effect_active &quot;backspin&quot;" />
+	<map value="SHIFT+DELETE" action="sampler_bank &quot;DJ DON GENIUS&quot;" />
+	<map value="SHIFT+TAB" action="sampler_bank" />
+	<map value="SHIFT+Pause" action="sampler_bank &quot;CONGA DRUMS&quot;" />
+	<map value="INSERT" action="sampler_bank &quot;Conga Drums _Dj Don Genius&quot;" />
+	<map value="CTRL+Scroll Lock" action="effect_active &apos;cut&apos;" />
+	<map value="ALT+Scroll Lock" action="effect_active &apos;echo&apos; &amp;&amp; effect_active &apos;reverb&apos; ? effect_active &apos;echo&apos; off &amp; effect_active &apos;reverb&apos; off" />
+	<map value="Scroll Lock" action="sampler_bank &quot;calabria&quot; " />
+	<map value="ALT+Q" action="clone &amp; deck active pause &amp; deck default play &amp; deck active select" />
+	<map value="ALT+W" action="crossfader 0% ? crossfader 100% : crossfader 0%" />
+	<map value="ALT+E" action="clone_deck &amp; down? deck default play : deck active pause &amp; deck active select" />
+	<map value="E" action="play" />
+	<map value="SHIFT+Q" action="deck default play &amp; deck active filter +0.002 &amp; deck default filter 50% &amp; up ?  deck default level 100% &amp; deck active stop &amp; deck active filter 50%" />
+	<map value="CTRL+F2" action="deck default loop" />
+	<map value="CTRL+RETURN" action="jogwheel" />
+	<map value="W" action="deck default hot_cue &amp; deck active stop &amp; deck default 100%" />
+	<map value="SHIFT+O" action="clone_from_deck active &amp; deck active stop &amp; deck default play" />
+	<map value="SHIFT+9" action="clone_from_deck A &amp; deck active stop &amp; deck B play" />
+	<map value="CTRL+F9" action="sampler 16 play_stutter" />
+	<map value="CTRL+F10" action="sampler 17 play_stutter" />
+	<map value="CTRL+F11" action="sampler 18 play_stutter &amp; sampler 19 play_stutter" />
+	<map value="ALT+F1" action="deck default loop_exit" />
+	<map value="G" action="effect_active &apos;backspin&apos; off &amp; deck default hot_cue 1 &amp; effect_active &apos;echo&apos; off &amp; effect_active &apos;reverb&apos; off &amp; deck default level &amp; effect_active &apos;backspin&apos; off &amp; key 0 &amp; delete_cue 6 &amp; delete_cue 7 &amp; deck active effect_active &quot;cut&quot; off &amp; deck default level 100%" />
+	<map value="SHIFT+G" action="level 100% &amp;  down ? scratch +30ms &amp; deck active level  0%  : scratch -30ms  &amp; deck default level 100%" />
+	<map value="SHIFT+J" action="goto_cue 1 &amp; key 0 &amp; level 100% &amp; cue_play &amp; deck default filter 70% ? deck default level 85% " />
+	<map value="SHIFT+K" action="goto_cue 2 &amp; key 0 &amp; level 100% &amp; cue_play &amp; deck default filter 70% ? deck default level 85% " />
+	<map value="K" action="key 0 &amp; hot_cue 2 &amp; up ? deck default level 0% : deck default filter 50% &amp; level 100%" />
+	<map value="J" action="key 0 &amp;  up ? deck default level 0% : deck default filter 50% &amp; level 100% &amp; hot_cue 1 &amp; " />
+	<map value="B" action="deck default hot_cue &amp; deck default level 100% &amp; deck active level 0% while_pressed" />
+	<map value="CTRL+H" action="deck default hot_cue 1" />
+</mapper>
